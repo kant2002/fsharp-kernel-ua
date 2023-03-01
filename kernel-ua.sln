@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DotNet.Interactive.FSharp.Ukrainian", "Microsoft.DotNet.Interactive.FSharp\DotNet.Interactive.FSharp.Ukrainian.fsproj", "{EC2709DD-9361-4A2A-8702-48C3F19A2BB7}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DotNetInteractive.FSharp.Ukrainian", "Microsoft.DotNet.Interactive.FSharp\DotNetInteractive.FSharp.Ukrainian.fsproj", "{EC2709DD-9361-4A2A-8702-48C3F19A2BB7}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DotNet.Interactive.FSharp.Ukrainian.Tests", "Microsoft.DotNet.Interactive.FSharp.Tests\DotNet.Interactive.FSharp.Ukrainian.Tests.fsproj", "{5730309C-E22E-44EE-A091-4F0C4C7F9DF8}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "DotNetInteractive.FSharp.Ukrainian.Tests", "Microsoft.DotNet.Interactive.FSharp.Tests\DotNetInteractive.FSharp.Ukrainian.Tests.fsproj", "{5730309C-E22E-44EE-A091-4F0C4C7F9DF8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F96F647-D1DA-407A-89B4-8C2494C2BDBC}"
 	ProjectSection(SolutionItems) = preProject
