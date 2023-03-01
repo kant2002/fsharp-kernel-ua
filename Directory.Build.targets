@@ -36,7 +36,7 @@
     -->
     <PackageReference Update="FSharp.Core" Version="7.0.0" />
     <!--<PackageReference Update="FSharp.Compiler.Service" Version="42.7.101" />-->
-    <PackageReference Update="FSharp.Compiler.Service" Version="43.7.102-dev" />
+    <PackageReference Update="FSharp.Compiler.Service.Ukrainian" Version="43.7.102-dev" />
     
   </ItemGroup>
 
