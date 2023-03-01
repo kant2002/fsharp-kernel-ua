@@ -1,14 +1,13 @@
 ﻿// Copyright (c) .NET Foundation and contributors. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-namespace Microsoft.DotNet.Interactive.FSharp
+namespace DotNet.Interactive.FSharp.Ukrainian
 
 open System
 open System.Runtime.CompilerServices
 open Microsoft.AspNetCore.Html
 open Microsoft.DotNet.Interactive
 open Microsoft.DotNet.Interactive.Commands
-open Microsoft.DotNet.Interactive.FSharp
 open Microsoft.DotNet.Interactive.Formatting
 
 [<AbstractClass; Extension; Sealed>]
@@ -19,7 +18,7 @@ type FSharpKernelExtensions private () =
     static let openType (typ: Type) = sprintf "open type %s.%s" typ.Namespace typ.Name
 
     [<Extension>]
-    static member UseDefaultFormatting(kernel: FSharpKernel) =
+    static member UseDefaultFormatting(kernel: FSharpUaKernel) =
         let code = 
             [
                 referenceAssemblyContaining typeof<IHtmlContent>
@@ -37,7 +36,7 @@ type FSharpKernelExtensions private () =
         kernel
 
     [<Extension>]
-    static member UseKernelHelpers(kernel: FSharpKernel) =
+    static member UseKernelHelpers(kernel: FSharpUaKernel) =
         let code = 
             [
                 referenceAssemblyContaining typeof<FSharpKernelHelpers.IMarker>

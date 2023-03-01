@@ -1,10 +1,10 @@
 ﻿// Copyright (c) .NET Foundation and contributors. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-namespace Microsoft.DotNet.Interactive.FSharp.Tests
+namespace DotNet.Interactive.FSharp.Ukrainian.Tests
 
 open Microsoft.DotNet.Interactive
-open Microsoft.DotNet.Interactive.FSharp.FSharpKernelHelpers.Html
+open DotNet.Interactive.FSharp.Ukrainian.FSharpKernelHelpers.Html
 open Xunit
 
 type HtmlFormatterTests() =

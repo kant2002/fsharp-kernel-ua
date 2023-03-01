@@ -23,7 +23,7 @@
   <ItemGroup />
 
   <ItemGroup>
-    <ProjectReference Include="..\Microsoft.DotNet.Interactive.FSharp\Microsoft.DotNet.Interactive.FSharp.fsproj" />
+    <ProjectReference Include="..\Microsoft.DotNet.Interactive.FSharp\DotNet.Interactive.FSharp.Ukrainian.fsproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
-// Copyright (c) .NET Foundation and contributors. All rights reserved.
+﻿// Copyright (c) .NET Foundation and contributors. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-namespace Microsoft.DotNet.Interactive.FSharp
+namespace DotNet.Interactive.FSharp.Ukrainian
 
 open System
 open System.Collections.Generic
@@ -20,7 +20,7 @@ open Microsoft.DotNet.Interactive
 open Microsoft.DotNet.Interactive.Formatting
 open Microsoft.DotNet.Interactive.Commands
 open Microsoft.DotNet.Interactive.Events
-open Microsoft.DotNet.Interactive.FSharp.ScriptHelpers
+open DotNet.Interactive.FSharp.Ukrainian.ScriptHelpers
 open Microsoft.DotNet.Interactive.ValueSharing
 
 open FSharp.Compiler.Diagnostics
@@ -31,13 +31,13 @@ open FSharp.Compiler.Text.Position
 open FsAutoComplete
 open FSharp.Compiler.Symbols
 
-type FSharpKernel () as this =
+type FSharpUaKernel () as this =
 
-    inherit Kernel("fsharp")
+    inherit Kernel("fsharpua")
 
-    do this.KernelInfo.LanguageName <- "F#"
+    do this.KernelInfo.LanguageName <- "Ф#"
     do this.KernelInfo.LanguageVersion <- "7.0"
-    do this.KernelInfo.DisplayName <- "F# Script"
+    do this.KernelInfo.DisplayName <- "Ф# Скрипт"
 
     static let lockObj = Object();
 
@@ -492,5 +492,5 @@ type FSharpKernel () as this =
                         if File.Exists root then
                             sb.AppendFormat("#I @\"{0}\"", root) |> ignore
                             sb.Append(Environment.NewLine) |> ignore
-            let command = new SubmitCode(sb.ToString(), "fsharp")
+            let command = new SubmitCode(sb.ToString(), "fsharpua")
             this.DeferCommand(command)

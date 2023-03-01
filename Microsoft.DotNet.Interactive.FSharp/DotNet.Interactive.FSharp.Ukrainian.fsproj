@@ -23,6 +23,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="$(OutputPath)/$(AssemblyName).dll" Pack="true" PackagePath="interactive-extensions/dotnet" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="FsAutoComplete\Utils.fs" />
     <Compile Include="FsAutoComplete\TypedAstUtils.fs" />
     <Compile Include="FsAutoComplete\TypedAstPatterns.fs" />
@@ -34,7 +38,8 @@
     <Compile Include="FsAutoComplete\InteractiveDirectives.fs" />
     <Compile Include="FsAutoComplete\ParseAndCheckResults.fs" />
     <Compile Include="FSharpScriptHelpers.fs" />
-    <Compile Include="FSharpKernel.fs" />
+    <Compile Include="FSharpUaKernel.fs" />
+    <Compile Include="FSharpKernelInitializationExtensions.fs" />
     <Compile Include="FSharpHtml.fs" />
     <Compile Include="FSharpKernelHelpers.fs" />
     <Compile Include="FSharpKernelExtensions.fs" />

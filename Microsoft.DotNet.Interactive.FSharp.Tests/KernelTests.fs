@@ -1,20 +1,20 @@
 ﻿// Copyright (c) .NET Foundation and contributors. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-namespace Microsoft.DotNet.Interactive.FSharp.Tests
+namespace DotNet.Interactive.FSharp.Ukrainian.Tests
 
 open System.Collections.Generic
 
 open FluentAssertions
 open Microsoft.DotNet.Interactive
-open Microsoft.DotNet.Interactive.FSharp
+open DotNet.Interactive.FSharp.Ukrainian
 open Microsoft.DotNet.Interactive.Commands
 open Microsoft.DotNet.Interactive.Events
 open Xunit
 
 type KernelTests() =
     let withKernel (action : Kernel -> (unit -> seq<KernelEvent>) -> 'a) =
-        use k = new FSharpKernel()
+        use k = new FSharpUaKernel()
         let mutable all = List<KernelEvent>()
         k.KernelEvents.Subscribe(fun e -> all.Add e) |> ignore
 
@@ -94,11 +94,11 @@ type KernelTests() =
         texts.Should().ContainAll(@"static member Sin", "a: float", "-> float")
 
     [<Fact>]
-    member __.``HoverText for Types``() =
+    member __.``HoverText для Типів``() =
         let texts =
             getHoverTexts 1 10 [ 
-                "open System"
-                "let a = Math.Sin(10.0)"
+                "відкрити System"
+                "нехай a = Math.Sin(10.0)"
             ]
 
         // type Math =
@@ -124,7 +124,7 @@ type KernelTests() =
     member __.``HoverText for Functions``() =
         let texts =
             getHoverTexts 0 9 [ 
-                "let a = int 20.0"
+                "нехай a = int 20.0"
             ]
 
         // val inline int : value:'T -> int (requires member op_Explicit)
