@@ -1,3 +1,5 @@
+[![Nuget](https://img.shields.io/nuget/dt/DotNetInteractive.FSharp.Ukrainian?color=green&label=DotNetInteractive.FSharp.Ukrainian&style=flat-square)](https://www.nuget.org/packages/DotNetInteractive.FSharp.Ukrainian)
+
 # .NET Polyglot ядро для мови Ф#
 
 .NET Interactive ядро для [Ф#](https://github.com/kant2002/fsharp). Ф# це українізований діалект F# який має сумісність із ключовими словами F# та додає ключові слова на українскій.
